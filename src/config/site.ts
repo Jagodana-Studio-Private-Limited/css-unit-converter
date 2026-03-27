@@ -1,27 +1,31 @@
 export const siteConfig = {
   // ====== CUSTOMIZE THESE FOR EACH TOOL ======
-  name: "{{TOOL_NAME}}",
-  title: "{{TOOL_TITLE}}",
-  description: "{{TOOL_DESCRIPTION}}",
-  url: "https://{{TOOL_SLUG}}.jagodana.com",
+  name: "CSS Unit Converter",
+  title: "CSS Unit Converter - Convert px, rem, em, vh, vw, % in Real-Time",
+  description: "Convert between CSS units instantly. Real-time conversion between px, rem, em, vh, vw, and percentages with adjustable base font size.",
+  url: "https://css-unit-converter.tools.jagodana.com",
   ogImage: "/opengraph-image",
 
   // Header
-  headerIcon: "Wrench", // lucide-react icon name (e.g., Image, Map, Code, Palette, Globe, FileSearch)
+  headerIcon: "Sigma", // lucide-react icon name
   // Brand gradient colors for Tailwind are in globals.css (--brand / --brand-accent)
   // Use text-brand, from-brand, to-brand-accent etc. in components
-  brandAccentColor: "#06b6d4", // hex accent for OG image gradient (must match --brand-accent in globals.css)
-
+  brandAccentColor: "#8b5cf6", // purple accent for OG image gradient
+  
   // SEO
   keywords: [
-    "{{KEYWORD_1}}",
-    "{{KEYWORD_2}}",
-    "{{KEYWORD_3}}",
+    "CSS unit converter",
+    "px to rem",
+    "CSS units",
+    "em converter",
+    "viewport units",
+    "responsive design",
+    "CSS developer tools",
   ],
-  applicationCategory: "DeveloperApplication", // or "DesignApplication", "UtilitiesApplication"
+  applicationCategory: "DeveloperApplication",
 
   // Theme
-  themeColor: "#10b981", // used in manifest and meta tags
+  themeColor: "#8b5cf6", // purple theme
 
   // Branding
   creator: "Jagodana",
@@ -31,145 +35,104 @@ export const siteConfig = {
   // Social Profiles (for Organization schema sameAs)
   socialProfiles: [
     "https://twitter.com/jagodana",
-    // Add more: LinkedIn, YouTube, etc.
   ],
 
   // Links
   links: {
-    github: "https://github.com/Jagodana-Studio-Private-Limited/{{TOOL_SLUG}}",
+    github: "https://github.com/Jagodana-Studio-Private-Limited/css-unit-converter",
     website: "https://jagodana.com",
   },
 
   // Footer
   footer: {
-    about: "{{FOOTER_ABOUT_DESCRIPTION}}",
+    about: "CSS Unit Converter helps developers instantly convert between different CSS units. Perfect for responsive design work, component building, and accessibility compliance.",
     featuresTitle: "Features",
     features: [
-      "{{FEATURE_1}}",
-      "{{FEATURE_2}}",
-      "{{FEATURE_3}}",
-      "{{FEATURE_4}}",
+      "Real-time conversion between px, rem, em, vh, vw, %",
+      "Adjustable base font size (default 16px)",
+      "Copy-to-clipboard for quick use",
+      "Mobile-friendly and fully responsive",
+      "Works offline - no API required",
+      "Dark mode support",
     ],
   },
 
   // Hero Section
   hero: {
-    badge: "{{HERO_BADGE_TEXT}}",
-    titleLine1: "{{HERO_TITLE_LINE_1}}",
-    titleGradient: "{{HERO_TITLE_GRADIENT_TEXT}}",
-    subtitle: "{{HERO_SUBTITLE}}",
+    badge: "CSS Developer Tools",
+    titleLine1: "CSS Unit",
+    titleGradient: "Converter",
+    subtitle: "Convert between px, rem, em, vh, vw, and % instantly. Adjust your base font size and get real-time conversions for responsive design.",
   },
 
   // Feature Cards (shown on homepage)
   featureCards: [
     {
-      icon: "{{FEATURE_ICON_1}}",
-      title: "{{FEATURE_CARD_TITLE_1}}",
-      description: "{{FEATURE_CARD_DESC_1}}",
+      icon: "Zap",
+      title: "Real-Time Conversion",
+      description: "See conversions update instantly as you type. No delays, no API calls—pure frontend logic.",
     },
     {
-      icon: "{{FEATURE_ICON_2}}",
-      title: "{{FEATURE_CARD_TITLE_2}}",
-      description: "{{FEATURE_CARD_DESC_2}}",
+      icon: "Copy",
+      title: "Copy to Clipboard",
+      description: "Copy any converted value with one click. Perfect for quick copy-paste into your CSS.",
     },
     {
-      icon: "{{FEATURE_ICON_3}}",
-      title: "{{FEATURE_CARD_TITLE_3}}",
-      description: "{{FEATURE_CARD_DESC_3}}",
+      icon: "Smartphone",
+      title: "Mobile Friendly",
+      description: "Responsive design works seamlessly on phones, tablets, and desktops.",
     },
   ],
 
-  // Related Tools (cross-linking to sibling Jagodana tools for internal SEO)
-  relatedTools: [
-    {
-      name: "Favicon Generator",
-      url: "https://favicon-generator.jagodana.com",
-      icon: "🎨",
-      description: "Generate all favicon sizes + manifest from any image.",
-    },
-    {
-      name: "Sitemap Checker",
-      url: "https://sitemap-checker.jagodana.com",
-      icon: "🔍",
-      description: "Discover and validate sitemaps on any website.",
-    },
-    {
-      name: "Regex Playground",
-      url: "https://regex-playground.jagodana.com",
-      icon: "🧪",
-      description: "Build, test & debug regular expressions in real-time.",
-    },
-    {
-      name: "Screenshot Beautifier",
-      url: "https://screenshot-beautifier.jagodana.com",
-      icon: "📸",
-      description: "Transform screenshots into beautiful images.",
-    },
-    {
-      name: "Color Palette Explorer",
-      url: "https://color-palette-explorer.jagodana.com",
-      icon: "🎭",
-      description: "Extract color palettes from any image.",
-    },
-    {
-      name: "Logo Maker",
-      url: "https://logo-maker.jagodana.com",
-      icon: "✏️",
-      description: "Create a professional logo in 60 seconds.",
-    },
-  ],
-
-  // HowTo Steps (drives HowTo JSON-LD schema for rich results)
+  // How-To Steps (for HowTo schema and FAQ)
   howToSteps: [
-    { name: "{{STEP_1_NAME}}", text: "{{STEP_1_TEXT}}", url: "" },
-    { name: "{{STEP_2_NAME}}", text: "{{STEP_2_TEXT}}", url: "" },
-    { name: "{{STEP_3_NAME}}", text: "{{STEP_3_TEXT}}", url: "" },
+    {
+      name: "Enter a CSS value",
+      description: "Type a number in any CSS unit field (px, rem, em, etc.)",
+    },
+    {
+      name: "Adjust base font size (optional)",
+      description: "Change the base font size (default 16px) for accurate rem/em conversions",
+    },
+    {
+      name: "View conversions",
+      description: "See all equivalent values in other units instantly",
+    },
+    {
+      name: "Copy to clipboard",
+      description: "Click the copy button next to any value to copy it to your clipboard",
+    },
   ],
-  howToTotalTime: "PT2M", // ISO 8601 duration (e.g., PT2M = 2 minutes)
 
-  // FAQ (drives both the FAQ UI section and FAQPage JSON-LD schema)
+  howToTotalTime: "PT1M", // 1 minute
+
+  // FAQ Section
   faq: [
     {
-      question: "{{FAQ_QUESTION_1}}",
-      answer: "{{FAQ_ANSWER_1}}",
+      question: "What CSS units does this converter support?",
+      answer: "This converter supports px (pixels), rem (relative to root font size), em (relative to element font size), vh (viewport height), vw (viewport width), and % (percentage).",
     },
     {
-      question: "{{FAQ_QUESTION_2}}",
-      answer: "{{FAQ_ANSWER_2}}",
+      question: "How is base font size used?",
+      answer: "The base font size is used to calculate rem and em conversions. By default it's 16px (the standard browser default), but you can adjust it to match your project's root font size.",
     },
     {
-      question: "{{FAQ_QUESTION_3}}",
-      answer: "{{FAQ_ANSWER_3}}",
+      question: "Can I use this offline?",
+      answer: "Yes! This tool works entirely in your browser with no API calls or internet connection required (after loading).",
     },
     {
-      question: "{{FAQ_QUESTION_4}}",
-      answer: "{{FAQ_ANSWER_4}}",
+      question: "What's the difference between rem and em?",
+      answer: "rem (root em) is relative to the root element's font size, while em is relative to the current element's font size. This is why rem is often preferred for consistent, predictable sizing.",
+    },
+    {
+      question: "How do viewport units (vh, vw) work?",
+      answer: "vh and vw are relative to the browser viewport size. 100vh = 100% of viewport height, 100vw = 100% of viewport width. These are useful for full-screen designs.",
     },
   ],
 
-  // ====== PAGES (for sitemap + per-page SEO) ======
-  // Add every route here. Sitemap and generatePageMetadata() read from this.
-  pages: {
-    "/": {
-      title: "{{TOOL_TITLE}}",
-      description: "{{TOOL_DESCRIPTION}}",
-      changeFrequency: "weekly" as const,
-      priority: 1,
-    },
-    // Example page (DELETE when starting your tool, or customize)
-    "/about": {
-      title: "About - {{TOOL_NAME}}",
-      description: "Learn more about {{TOOL_NAME}} and how it works.",
-      changeFrequency: "monthly" as const,
-      priority: 0.7,
-    },
-    // "/blog": {
-    //   title: "Blog - {{TOOL_NAME}}",
-    //   description: "Tips, tutorials, and updates about {{TOOL_NAME}}.",
-    //   changeFrequency: "weekly" as const,
-    //   priority: 0.8,
-    // },
-  },
-} as const;
-
-export type SiteConfig = typeof siteConfig;
+  // Related tools (cross-links to other Jagodana tools)
+  relatedTools: [
+    { name: "JSON Path Finder", url: "https://json-path-finder.tools.jagodana.com" },
+    { name: "HTTP Status Debugger", url: "https://http-status-debugger.tools.jagodana.com" },
+  ],
+};
